@@ -1,6 +1,6 @@
 import DS from 'ember-data';
-import environment from '../config/environment';
+import config from '../config/environment';
 
 export default DS.RESTAdapter.extend({
-  host: 'https://api.meetup.com/Triangle-Ember/events?key=' + environment.MEETUP_KEY + '&sign=true'
+  host: 'https://api.meetup.com/Triangle-Ember/events?key=' + config.MEETUP_KEY + '&sign=true'
 });
